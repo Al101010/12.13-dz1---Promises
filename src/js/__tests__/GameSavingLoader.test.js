@@ -1,11 +1,9 @@
-
 import GameSavingLoader from "../GameSavingLoader";
 
 test("should class GameSavingLoader.load()", () => {
-    (async() => {
+    (async(done) => {
         const result = await GameSavingLoader.load();
     
-        // console.log(result);
         const expected = {
             id: 9,
             created: 1546300800,
@@ -13,5 +11,6 @@ test("should class GameSavingLoader.load()", () => {
         };
        
         expect(result).toEqual(expected);
+        done();
     })();   
 });  

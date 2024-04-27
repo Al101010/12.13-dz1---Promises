@@ -1,8 +1,8 @@
 import GameSavingLoader from "./GameSavingLoader";
 
 GameSavingLoader.load().then(
-    (savingGame) => {
-        return savingGame;
+    (saving) => {
+        return saving;
     },
     (error) => {
         return error;
