@@ -1,7 +1,7 @@
 import GameSavingLoader from "../GameSavingLoader";
 
 test("should class GameSavingLoader.load()", () => {
-    (async(done) => {
+    (async() => {
         const result = await GameSavingLoader.load();
     
         const expected = {
@@ -11,6 +11,5 @@ test("should class GameSavingLoader.load()", () => {
         };
        
         expect(result).toEqual(expected);
-        done();
     })();   
 });  
